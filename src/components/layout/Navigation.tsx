@@ -38,9 +38,9 @@ export default function Navigation(props: NavigationProps) {
     <section id="navigation" className="bg-background text-foreground border-b border-border">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo and Brand */}
-          <div className="flex items-center space-x-3">
-            <div className="relative w-8 h-8 sm:w-10 sm:h-10">
+          {/* Logo */}
+          <div className="flex items-center">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14">
               <Image
                 src={config.logoUrl}
                 alt={config.logoAlt}
@@ -50,12 +50,6 @@ export default function Navigation(props: NavigationProps) {
                 priority
               />
             </div>
-            <span
-              className="text-lg sm:text-xl font-semibold text-foreground"
-              data-editable="brandName"
-            >
-              {config.brandName}
-            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -105,8 +99,8 @@ export default function Navigation(props: NavigationProps) {
                 <div className="flex flex-col h-full">
                   {/* Mobile Header */}
                   <div className="flex items-center justify-between pb-6 border-b border-border">
-                    <div className="flex items-center space-x-3">
-                      <div className="relative w-8 h-8">
+                    <div className="flex items-center">
+                      <div className="relative w-12 h-12 sm:w-14 sm:h-14">
                         <Image
                           src={config.logoUrl}
                           alt={config.logoAlt}
@@ -115,12 +109,6 @@ export default function Navigation(props: NavigationProps) {
                           data-editable-src="logoUrl"
                         />
                       </div>
-                      <span
-                        className="text-lg font-semibold text-foreground"
-                        data-editable="brandName"
-                      >
-                        {config.brandName}
-                      </span>
                     </div>
                   </div>
 

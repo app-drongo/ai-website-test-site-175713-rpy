@@ -78,19 +78,6 @@ export default function Hero(props: HeroProps) {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          {/* Logo */}
-          <div className="flex justify-center mb-8">
-            <Image
-              src={config.logoUrl}
-              alt={config.logoAlt}
-              width={120}
-              height={48}
-              className="h-12 w-auto object-contain"
-              data-editable-src="logoUrl"
-              priority
-            />
-          </div>
-
           {/* Badge */}
           <div className="flex justify-center mb-8">
             <Badge variant="secondary" className="bg-muted text-muted-foreground px-4 py-2">
